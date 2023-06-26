@@ -7,7 +7,9 @@ object test{
         rounded;
     }
     def main(args:Array[String])={
-       //println( round(avg(234,233)));
-        println((avg(111191,233)));
+        var num:Double=11.8;
+        println(avg(1232,5655659));
+        println(round(avg(1232,5655659)));
+        
     }
 }
