@@ -2,18 +2,19 @@ import scala.io.StdIn
 
 object test{
     
-    def input(st:String =StdIn.readLine())={
-        var lenth:Int =st.length;
-        def print(lenth)={
-            println(st[lenth-1]);
-            lenth-=1;
-            if(lenth>0){
-                print(lenth);
-            }
+    
+    def pr(st:String):Unit={
+        
+        if(st.length>0){
+            println(st(st.length-1));
+            
+            pr(st.slice(0, st.length - 1));
         }
-    }  
+    }
+     
     def main(args:Array[String])={
-        input();
+        var st1:String =StdIn.readLine()
+        pr(st1);
     }
     
 }
